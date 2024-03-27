@@ -62,7 +62,7 @@ function verificarEntradaNumerica(montoPrestamoP, tasaInteresAnualP, numeroCuota
 
     let result = false;
 
-    if (isNaN(montoPrestamoP) && isNaN(tasaInteresAnualP) && isNaN(numeroCuotaAnualP)) {
+    if (isNaN(montoPrestamoP) || isNaN(tasaInteresAnualP) || isNaN(numeroCuotaAnualP)) {
         alert("Solo digitar numeros");
         return result = false;
     }
